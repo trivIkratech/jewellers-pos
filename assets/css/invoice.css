@@ -1,0 +1,377 @@
+/* ============================================================
+   Invoice / Bill Print Styles
+   ============================================================ */
+
+.invoice-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    font-family: 'Inter', sans-serif;
+    color: #263238;
+}
+
+/* A4 Format */
+.invoice-a4 {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 20mm;
+    margin: 0 auto;
+}
+
+/* Thermal 80mm Format */
+.invoice-thermal {
+    width: 80mm;
+    padding: 5mm;
+    font-size: 11px;
+    margin: 0 auto;
+}
+
+/* Invoice Header */
+.invoice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #213C72;
+    margin-bottom: 20px;
+}
+
+.invoice-brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.invoice-brand img {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.invoice-brand h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #213C72;
+    margin: 0;
+}
+
+.invoice-brand p {
+    font-size: 12px;
+    color: #6B7280;
+    margin: 2px 0 0;
+}
+
+.invoice-title {
+    text-align: right;
+}
+
+.invoice-title h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #213C72;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.invoice-title .invoice-number {
+    font-size: 14px;
+    color: #6B7280;
+    margin-top: 4px;
+}
+
+.invoice-title .invoice-date {
+    font-size: 13px;
+    color: #263238;
+    margin-top: 2px;
+}
+
+/* Invoice Info */
+.invoice-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.invoice-info-box {
+    flex: 1;
+}
+
+.invoice-info-box h6 {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #9CA3AF;
+    margin-bottom: 8px;
+}
+
+.invoice-info-box p {
+    font-size: 13px;
+    margin: 2px 0;
+    line-height: 1.6;
+}
+
+.invoice-info-box .name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #263238;
+}
+
+/* Rate Info */
+.invoice-rate-info {
+    background: #F4F6F9;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 24px;
+    font-size: 13px;
+}
+
+.invoice-rate-info .rate-item {
+    display: flex;
+    gap: 6px;
+}
+
+.invoice-rate-info .rate-label {
+    color: #6B7280;
+}
+
+.invoice-rate-info .rate-value {
+    font-weight: 600;
+    color: #263238;
+}
+
+/* Invoice Table */
+.invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+    font-size: 13px;
+}
+
+.invoice-table thead th {
+    background: #213C72;
+    color: #fff;
+    padding: 10px 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.invoice-table thead th:first-child {
+    border-radius: 6px 0 0 0;
+}
+
+.invoice-table thead th:last-child {
+    border-radius: 0 6px 0 0;
+    text-align: right;
+}
+
+.invoice-table tbody td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #E5E7EB;
+    vertical-align: top;
+}
+
+.invoice-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.invoice-table .text-right {
+    text-align: right;
+}
+
+.invoice-table .text-center {
+    text-align: center;
+}
+
+.invoice-table .product-name {
+    font-weight: 600;
+}
+
+.invoice-table .product-details {
+    font-size: 11px;
+    color: #6B7280;
+    margin-top: 2px;
+}
+
+/* Invoice Summary */
+.invoice-summary {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+}
+
+.invoice-summary-table {
+    width: 320px;
+}
+
+.invoice-summary-table .summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    font-size: 13px;
+}
+
+.invoice-summary-table .summary-row .label {
+    color: #6B7280;
+}
+
+.invoice-summary-table .summary-row .value {
+    font-weight: 500;
+    text-align: right;
+}
+
+.invoice-summary-table .summary-row.subtotal {
+    border-top: 1px solid #E5E7EB;
+    padding-top: 10px;
+    margin-top: 4px;
+}
+
+.invoice-summary-table .summary-row.total {
+    border-top: 2px solid #213C72;
+    padding-top: 12px;
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #213C72;
+}
+
+/* Amount in Words */
+.invoice-words {
+    background: #F4F6F9;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.invoice-words .label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #9CA3AF;
+}
+
+.invoice-words .words {
+    font-weight: 500;
+    color: #263238;
+    margin-top: 2px;
+}
+
+/* Payment Info */
+.invoice-payment {
+    margin-bottom: 24px;
+}
+
+.invoice-payment h6 {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #9CA3AF;
+    margin-bottom: 8px;
+}
+
+.payment-details-table {
+    font-size: 13px;
+}
+
+.payment-details-table td {
+    padding: 4px 12px 4px 0;
+}
+
+/* Invoice Footer */
+.invoice-footer {
+    border-top: 1px solid #E5E7EB;
+    padding-top: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.invoice-footer .terms {
+    font-size: 11px;
+    color: #9CA3AF;
+    max-width: 400px;
+}
+
+.invoice-footer .terms h6 {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6B7280;
+    margin-bottom: 4px;
+}
+
+.invoice-footer .signature {
+    text-align: center;
+}
+
+.invoice-footer .signature .line {
+    width: 160px;
+    border-top: 1px solid #263238;
+    margin-bottom: 4px;
+}
+
+.invoice-footer .signature p {
+    font-size: 12px;
+    color: #6B7280;
+}
+
+/* Thermal specific */
+.invoice-thermal .invoice-header {
+    text-align: center;
+    border-bottom: 1px dashed #000;
+    padding-bottom: 8px;
+}
+
+.invoice-thermal .invoice-header h2 {
+    font-size: 16px;
+}
+
+.invoice-thermal .invoice-table thead th {
+    background: none;
+    color: #000;
+    border-bottom: 1px dashed #000;
+    padding: 4px 2px;
+    font-size: 10px;
+}
+
+.invoice-thermal .invoice-table tbody td {
+    padding: 4px 2px;
+    font-size: 11px;
+    border-bottom: none;
+}
+
+.invoice-thermal .invoice-footer {
+    border-top: 1px dashed #000;
+    text-align: center;
+    font-size: 10px;
+}
+
+/* Print specific */
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .invoice-container {
+        box-shadow: none;
+        padding: 0;
+    }
+    .no-print {
+        display: none !important;
+    }
+    @page {
+        margin: 10mm;
+    }
+}
+
